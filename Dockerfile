@@ -100,8 +100,6 @@ ENV MCP_HTTP_PORT=8080
 ENV MCP_HTTP_HOST=0.0.0.0
 ENV AUTH_MODE=env
 
-# Define volume for logs
-VOLUME ["/app/logs"]
 
 # Start the application directly (HTTP transport doesn't need the stdio wrapper)
 CMD ["node", "dist/index.js"]
